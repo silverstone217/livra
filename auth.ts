@@ -12,6 +12,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
     verifyRequest: "/verif-email-sent",
   },
   secret: AUTH_SECRET!,
+  trustHost: true,
 
   providers: [
     Google({
